@@ -63,13 +63,13 @@
         </div>
         <div class="col-sm-1">
           <!--If current page is less than total pages then only show hyperlink . else only span-->
-          <a th:if="${currentPage < totalPages}" th:href="@{'/page/' + ${currentPage + 1}+ '?sortField=' + ${sortField} + '&sortDirection=' + ${sortDir}}">Next</a>
+          <a th:if="${currentPage < totalPages}" th:href="@{'/page/' + ${currentPage + 1}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">Next</a>
           <span th:unless="${currentPage < totalPages}">Next</span>
         </div>
 
         <div class="col-sm-1">
           <!--If current page is less than total pages then only show hyperlink . else only span-->
-          <a th:if="${currentPage < totalPages}" th:href="@{'/page/' + ${totalPages}+ '?sortField=' + ${sortField} + '&sortDirection=' + ${sortDir}}">Last</a>
+          <a th:if="${currentPage < totalPages}" th:href="@{'/page/' + ${totalPages}+ '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir}}">Last</a>
           <span th:unless="${currentPage < totalPages}">Last</span>
         </div>
       </div>
